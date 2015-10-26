@@ -41,8 +41,9 @@ public class LabelView extends TextView {
 
 
     @Override public void setText(CharSequence mainText, BufferType type) {
+        super.setText(mainText, type);
         mText = mainText;
-        CharSequence text = mText;
+        CharSequence text = mainText;
         if (notNullOrEmpty(mLeftText)) {
             text = mLeftText.toString() + text;
         }
@@ -55,8 +56,8 @@ public class LabelView extends TextView {
         if (notNullOrEmpty(mBottomText)) {
             text = text + "\n" + mBottomText.toString();
         }
-        if (notNullOrEmpty(text) && !getText().equals(mainText)) {
-            setText(text);
+        if (notNullOrEmpty(text)) {
+            super.setText(text, type);
         }
     }
 

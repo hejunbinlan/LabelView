@@ -7,3 +7,7 @@
 ("我的id: " + user.id)`, sad...
 
 现在呢，使用 `LabelView` 吧！
+
+### TODO
+
+[ ] 实现上下左右 text 的样式定义

@@ -26,4 +26,11 @@
         app:top_text="TopText"
         app:right_text=" &lt;- RightText"
         app:bottom_text="BottomText"/>
+
+    <EditText
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:textSize="12sp"/>
 </LinearLayout>

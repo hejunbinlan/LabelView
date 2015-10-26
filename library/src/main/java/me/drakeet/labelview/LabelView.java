@@ -36,7 +36,12 @@ public class LabelView extends TextView {
         a.recycle();
 
         setGravity(Gravity.CENTER);
-        mText = super.getText();
+        setText(super.getText());
+    }
+
+
+    @Override public void setText(CharSequence mainText, BufferType type) {
+        mText = mainText;
         CharSequence text = mText;
         if (notNullOrEmpty(mLeftText)) {
             text = mLeftText.toString() + text;
@@ -53,11 +58,6 @@ public class LabelView extends TextView {
         if (notNullOrEmpty(text)) {
             setText(text);
         }
-    }
-
-
-    @Override public void setText(CharSequence text, BufferType type) {
-        super.setText(text, type);
     }
 
 

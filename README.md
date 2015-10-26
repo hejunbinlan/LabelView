@@ -1,4 +1,6 @@
 # LabelView
+Inherits from TextView, can set vertical and horizontal label to TextView
+
 继承 TextView，能够在 TextView 上下左右固定设置文本的 View
 
 ![](/demo.png)

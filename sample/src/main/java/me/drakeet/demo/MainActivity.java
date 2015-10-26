@@ -12,9 +12,9 @@ public class MainActivity extends AppCompatActivity {
     @Override protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        TextView textView = (TextView) findViewById(R.id.normal_text);
+        final TextView textView = (TextView) findViewById(R.id.normal_text);
         final TextView labelView = (TextView) findViewById(R.id.lableview);
-        textView.append(labelView.getText());
+        textView.setText(getString(R.string.hint, labelView.getText()));
 
         EditText editText = (EditText) findViewById(R.id.edit_text);
         editText.addTextChangedListener(new TextWatcher() {
@@ -26,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override public void onTextChanged(CharSequence s, int start, int before, int count) {
                 labelView.setText(s);
+                textView.setText(getString(R.string.hint, labelView.getText()));
             }
 
 

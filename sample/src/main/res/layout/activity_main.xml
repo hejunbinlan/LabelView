@@ -14,7 +14,7 @@
         android:id="@+id/normal_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="This is a normal TextView, and the getText() of below LabelView is: "/>
+        android:text="@string/hint"/>
 
     <me.drakeet.labelview.LabelView
         android:id="@+id/lableview"

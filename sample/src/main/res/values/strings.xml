@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">LabelView</string>
+    <string name="hint">This is a normal TextView, and the getText() of below LabelView is: %s</string>
 </resources>

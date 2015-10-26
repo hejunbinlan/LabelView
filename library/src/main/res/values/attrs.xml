@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="LabelView">
+        <attr name="left_text"
+            format="string"/>
+
+        <attr name="right_text"
+            format="string"/>
+
+        <attr name="top_text"
+            format="string"/>
+
+        <attr name="bottom_text"
+            format="string"/>
+    </declare-styleable>
+</resources>

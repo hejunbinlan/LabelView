@@ -55,7 +55,7 @@ public class LabelView extends TextView {
         if (notNullOrEmpty(mBottomText)) {
             text = text + "\n" + mBottomText.toString();
         }
-        if (notNullOrEmpty(text) && getText() != mainText) {
+        if (notNullOrEmpty(text) && !getText().equals(mainText)) {
             setText(text);
         }
     }
